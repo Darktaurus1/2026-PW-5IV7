@@ -298,7 +298,7 @@ form {
     border-color: #ef4444;
 }
 .formulario-registro:valid button:hover{
-    background-color: #27ae60;
+    background-color: blue;
 }
 .formulario-registro:valid {
     border-color: #2ecc71;
