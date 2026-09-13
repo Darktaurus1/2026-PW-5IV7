@@ -290,16 +290,14 @@ form {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
-.formulario-registro button:hover {
-
-    background-color: red;
-}
 .formulario-registro input:invalid {
     border-color: #ef4444;
 }
+
 .formulario-registro:valid button:hover{
-    background-color: blue;
+    background-color:#16a34a ;
 }
-.formulario-registro:valid {
-    border-color: blue;
+
+.formulario-registro:valid  input {
+    border-color: #16a34a;
 }
