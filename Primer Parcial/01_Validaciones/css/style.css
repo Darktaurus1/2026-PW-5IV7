@@ -300,6 +300,14 @@ form {
     box-sizing: border-box; 
     transition: border-color 0.3s ease;
 }
+#nombre {
+    text-transform: capitalize;
+}
+
+#boleta {
+   
+    letter-spacing: 5px; 
+}
 .formulario-registro button:hover{
     background-color: #ff0000;
 }
