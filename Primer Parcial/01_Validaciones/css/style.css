@@ -58,15 +58,13 @@ footer{
     text-decoration: underline;
 }
 
-
-/* Contenedor principal para centrar el contenido */
 .container {
     max-width: 900px;
     margin: 50px auto;
     padding: 20px;
 }
 
-/* Tarjeta o caja de contenido */
+
 .content {
     background-color: #ffffff;
     padding: 30px;
@@ -74,7 +72,7 @@ footer{
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-/* Estilos para los títulos y textos de bienvenida */
+
 .titulo h1 {
     color: #2c3e50;
     font-size: 26px;
@@ -87,7 +85,7 @@ footer{
     margin-bottom: 30px;
 }
 
-/* Estilos de la tabla */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -113,7 +111,7 @@ tr:hover {
     background-color: #f1f1f1;
 }
 
-/* Estilos para los enlaces (botones) */
+
 td a {
     display: inline-block;
     padding: 8px 14px;
