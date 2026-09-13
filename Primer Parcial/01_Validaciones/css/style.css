@@ -280,3 +280,65 @@ td a:hover {
 .bitacora li:hover {
     background-color: #f9f9f9;
 }
+/*css para un form*/
+/* Estilos para el formulario sencillo */
+form {
+    background-color: #ffffff;
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fcfcfc;
+    box-sizing: border-box; /* Asegura que el padding no rompa el ancho */
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    background-color: #ffffff;
+}
+
+form button[type="submit"],
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover,
+form input[type="submit"]:hover {
+    background-color: #27ae60;
+}
