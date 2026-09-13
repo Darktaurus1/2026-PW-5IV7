@@ -64,25 +64,15 @@ footer{
 }
 
 
-.content {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-}
 
 
-.titulo h1 {
-    margin: 0;
-    font-family: 'Courier New', Courier, monospace;
-    color: #1f2937;
-    background-color: #f9fafb;
-}
 
-.titulo p {
+
+.titulo content {
+    background-color: #1f2937;
     color: #ffffff;
-    font-size: 16px;
-    margin-bottom: 30px;
+    padding: 1rem;
+    text-align: center;
 }
 
 
