@@ -24,8 +24,21 @@ formArreglos.addEventListener('submit', (evento) =>{
 
     switch(operacion){
         case 'forEach':
-            resultado = talleres.map((t) => `- ${t.nombre} (${t.inscritos}/${t.cupo})`).join('\n');
+            resultado = talleres.map((t) => `- ${t.nombre} (${t.inscritos}/${t.cupo})`).join('<br>');
             break;
+        case 'map':
+            resultado = talleres.map((t) => t.nombre).join(', ');
+            break;
+        case 'filter':
+            resultado = talleres.filter((t) => t.inscritos >= t.cupo).map((t) => t.nombre).join(', ');
+            break;
+        case 'find':
+            const taller = talleres.find((t) => t.instructor === 'Ing. María López');
+            resultado = taller ? taller.nombre : 'No se encontró el taller';
+            break;
+        
+        
+    
     }
 
 
