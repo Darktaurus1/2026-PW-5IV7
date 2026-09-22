@@ -8,10 +8,24 @@ const talleres = [
 ];
 
 
+
 function pintarTabla(){
+    const tabla = document.getElementById('tabla-talleres');
+    tabla.innerHTML = '';
+
+    talleres.forEach((taller) => {
+        const fila = document.createElement('tr');
+        fila.innerHTML = `
+            <td>${taller.nombre}</td>
+            <td>${taller.instructor}</td>
+            <td>${taller.cupo}</td>
+            <td>${taller.inscritos}</td>
+        `;
+        tabla.appendChild(fila);
+    });
+
     //debe de obtener la tabla y rellenarla con los datos de talleres
 }
-
 const formArreglos = document.getElementById('form-arreglos');
 const resultadoArreglos = document.getElementById('resultado-arreglo');
 const selectOperacionArreglo = document.getElementById('operacion-arreglo');
@@ -38,9 +52,10 @@ formArreglos.addEventListener('submit', (evento) =>{
             break;
         
         
-    
+    pintarTabla(resultado);
     }
 
 
     resultadoArreglos.textContent = resultado;
 });
+pintarTabla();
