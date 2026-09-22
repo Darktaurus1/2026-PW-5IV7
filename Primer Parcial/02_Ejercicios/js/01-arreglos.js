@@ -26,6 +26,8 @@ console.log(llenos.map((t)=> t.nombre))
 
 
 // TODO: find — encuentra el PRIMER taller impartido por 'Ing. María López'
+console.log("Aplicando la función Filter en los talleres")
+const tallerMaria = talleres.find((t) => t.instructor === 'Ing. María López')
 
 // TODO: reduce — calcula `totalInscritos`, la suma de inscritos de todos los talleres
 
