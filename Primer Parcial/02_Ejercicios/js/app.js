@@ -59,3 +59,16 @@ formArreglos.addEventListener('submit', (evento) =>{
     resultadoArreglos.textContent = resultado;
 });
 pintarTabla();
+//Segunda parte
+const formObjeto = document.getElementById('form-objeto');
+const resultadoObjeto = document.getElementById('resultado-objeto');
+
+formObjeto.addEventListener('submit', (evento) => {
+    evento.preventDefault();
+    const taller = {
+        nombre : document.getElementById('obj-nombre').value,
+        instructor: document.getElementById('obj-instructor').value,
+        cupo : Number(document.getElementById('obj-cupo').value),
+        inscritos : Number(document.getElementById('obj-inscritos').value)
+    }
+})
