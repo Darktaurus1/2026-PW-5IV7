@@ -86,7 +86,7 @@ formObjeto.addEventListener('submit', (evento) => {
             resultado = Object.entries(taller).map(([campo,valor]) => `${campo}: ${valor}`).join('\n');
             break;
         case 'stringify':
-            restultado = JSON.stringify(taller, null, 2);
+            resultado = JSON.stringify(taller, null, 2);
             break;
         case 'roundtrip':
             
