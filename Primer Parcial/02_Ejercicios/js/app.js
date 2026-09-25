@@ -70,5 +70,22 @@ formObjeto.addEventListener('submit', (evento) => {
         instructor: document.getElementById('obj-instructor').value,
         cupo : Number(document.getElementById('obj-cupo').value),
         inscritos : Number(document.getElementById('obj-inscritos').value)
+    };
+    const operacion = document.getElementById('operacion-objeto').value;
+
+    let resultado;
+    switch(operacion){
+        case'keys':
+            resultado = JSON.stringify(Object.keys(taller));
+        break;
+        case'values':
+        break;
+        case'entries':
+        break;
+        case'stringify':
+        break;
+        case'roundtrip':
+        break;
     }
+    resultadoObjeto.textContent = resultado;
 })
