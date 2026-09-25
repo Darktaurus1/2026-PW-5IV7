@@ -75,18 +75,31 @@ formObjeto.addEventListener('submit', (evento) => {
 
     let resultado;
     switch(operacion){
-        case'keys':
+        case 'keys':
             resultado = JSON.stringify(Object.keys(taller));
-        break;
-        case'values':
-        break;
-        case'entries':
-        resultado = Object.entries(taller).map(([campo, valor]) => '$(campo):$(valor)').join('\n'); 
-        break;
-        case'stringify':
-        break;
-        case'roundtrip':
-        break;
+            break;
+        case 'values':
+            break;
+        case 'entries':
+            
+            resultado = Object.entries(taller).map(([campo,valor]) => `${campo}: ${valor}`).join('\n');
+            break;
+        case 'stringify':
+            break;
+        case 'roundtrip':
+            
+            const textoJson = JSON.stringify(taller, null, 2);
+            const objetoDeVuelta = JSON.parse(textoJson);
+
+            resultado = [
+                '',
+                textoJson,
+                '',
+                `tipo: ${typeof objetoDeVuelta}`,
+                objetoDeVuelta.nombre
+            ].join('\n');
+            break;
     }
+
     resultadoObjeto.textContent = resultado;
 })
