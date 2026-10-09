@@ -4,7 +4,7 @@ export default function Menu(){
     return(
         <nav>
             <Link href="/">Inicio</Link>
-            <Link href="/">Practica 1</Link>
+            <Link href="/practica/1">Practica 1</Link>
             </nav>
     );
 }
