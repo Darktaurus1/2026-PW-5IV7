@@ -46,6 +46,7 @@ async function eliminar(id) {
     return filas [0];
         
     }
+    module.exports = {listar, ObtenerPorid, crear, actualizar, eliminar, buscarPorCorreoConHash}
     //Tarea uno crear los modelos de las tablas talleres y asistencia 
     //taller tiene registaralumno al taller , consultar todos los talleres
-    //asistencia tiene registrarasistencia 
+    //asistencia tiene registrarasistencia consultar asistencia de taller
