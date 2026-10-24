@@ -10,8 +10,12 @@
   border-radius: 8px;
   background: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform 0.15s, box-shadow 0.15s;
 }
-
+.tarjeta:hover{
+   transform: translate(-2px);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
 .titulo {
   margin: 4px 0;
   color: #6b1d3a;
