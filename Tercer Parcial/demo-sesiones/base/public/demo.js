@@ -1,7 +1,7 @@
 // La página solo hace fetch a la API. El navegador manda la cookie solo (misma página, mismo servidor).
 const $ = (id) => document.getElementById(id);
 
-async function llamar(metodo, url, cuerpo) {
+/*async function llamar(metodo, url, cuerpo) {
   const opciones = { method: metodo, headers: {} };
   if (cuerpo) {
     opciones.headers['Content-Type'] = 'application/json';
@@ -96,3 +96,4 @@ llamar('GET', '/api/config').then(({ datos }) => {
   $('config').textContent = JSON.stringify(datos, null, 2);
 });
 refrescarTodo();
+*/
