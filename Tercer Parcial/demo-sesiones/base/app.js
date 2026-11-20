@@ -269,7 +269,8 @@ app.get('/api/jwt/admin/reporte', requiereJWT, requiereRol('admin'), (req, res)=
 });
 
 app.post('/api/jwt/refresh', requiereJWT, (req, res)=>{
-  const { sub, usuario, nombre, rol } = req.jwtM res.json({token: firmarToken({id: sub, usuario, nombre, rol})});
+  const { sub, usuario, nombre, rol } = req.jwtM 
+  res.json({token: firmarToken({id: sub, usuario, nombre, rol})});
 });
 
 app.post('/api/jwt/logout', requiereJWT, async(req, res, next)=>{
